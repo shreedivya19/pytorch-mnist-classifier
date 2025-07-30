@@ -122,7 +122,7 @@ def main():
                     # Show processed image
                     st.markdown("#### 🖼️ Processed Image (28×28)")
                     processed_img = image_tensor.squeeze().numpy()
-                    st.image(processed_img, width=150, use_column_width=False)
+                    st.image(processed_img, width=150, use_container_width=False)
             else:
                 st.info("👆 Draw a digit on the canvas to see predictions!")
         else:
