@@ -5,8 +5,6 @@ numpy>=1.21.0
 Pillow>=8.0.0
 tqdm>=4.64.0
 streamlit>=1.47.0
-streamlit-drawable-canvas
-opencv-python
-streamlit>=1.47.0
 streamlit-drawable-canvas>=0.9.0
 opencv-python>=4.5.0
+
