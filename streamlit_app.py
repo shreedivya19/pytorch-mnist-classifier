@@ -34,8 +34,8 @@ def preprocess_image(image_data):
     # Convert RGBA numpy array to PIL image, convert to grayscale
     pil_img = Image.fromarray(image_data).convert("L")
 
-    # Resize to 28×28 with antialiasing
-    pil_img = pil_img.resize((28, 28), Image.ANTIALIAS)
+    # Resize to 28×28 with LANCZOS (replacement for ANTIALIAS)
+    pil_img = pil_img.resize((28, 28), Image.LANCZOS)
 
     # Convert to numpy array and normalize to [0,1]
     img = np.array(pil_img).astype("float32") / 255.0
